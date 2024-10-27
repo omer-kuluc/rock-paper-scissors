@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+  5. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+  6. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/*
+  7. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/*
+  8. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  background: #182344;
+  padding-top: 32px;
+  padding-bottom: 56px;
+  min-height: 100vh;
+}
+
+
+.header {
+  display: flex;
+  justify-content: space-around;
+}
+
+.header img {
+  align-self: end;
+}
+
+.score-box {
+  background: linear-gradient(0deg, #F3F3F3 0%, #FFFFFF 100%);
+  border-radius: 4px;
+  padding: 10px 20px;
+}
+
+.score-box h3 {
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 12px;
+  letter-spacing: 1.5625px;
+  text-align: center;
+  color : #2A45C2;
+}
+
+.score-box p {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 40px;
+  text-align: center;
+  color : #565468;
+}
+
+.game-area {
+  background-image: url('../img/background-triangle.png');
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+.game-images{
+  margin-bottom: 139px;
+  max-width: 325px;
+  margin-inline : auto;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+.game-images img {
+  cursor: pointer;
+}
+
+.upside{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 53px;
+}
+
+.downside {
+  margin-top: 15px;
+}
+
+.downside img {
+  margin-inline : auto;
+}
+
+
+.show-result-area {
+  margin-top: 100px;
+  margin-bottom: 139px;
+  max-width: 325px;
+  margin-inline : auto;
+  padding: 32px;
+  pointer-events: none;
+  user-select: none;
+}
+
+.d-none {
+  display: none;
+}
+
+.d-flex {
+  display: flex;
+  gap: 50px;
+}
+
+.d-block {
+  display: block;
+}
+
+.result-sample {
+  display: none;
+}
+
+.win-scenario, .lose-scenario , .deuce-scenario{
+  margin-top: 111px;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+  max-width: 300px;
+}
+
+.win-scenario h3, .lose-scenario h3, .deuce-scenario h3 {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 67.2px;
+  text-align: center;
+  color : #FFFFFF;
+  margin-bottom: 16px;
+
+}
+
+.win-scenario a, .lose-scenario a, .deuce-scenario a {
+  background: linear-gradient(0deg, #F3F3F3 0%, #FFFFFF 100%);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19.2px;
+  letter-spacing: 2.5px;
+  border-radius : 8px;
+  padding: 15px 85px;
+}
+  
+.rules {
+  border : 1px solid #FFFFFF;
+  padding: 10px 36px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19.2px;
+  letter-spacing: 2.5px;
+  text-align: center;
+  color : #FFFFFF;
+  display: block;
+  margin-inline : auto;
+  background: radial-gradient(134.34% 134.34% at 50% 0%, #1F3757 0%, #131537 100%);
+}
+
+/*ali*/
+/* .rules-img {
+  display: block;
+  background-color: white;
+  height: 100vh;
+}
+
+.rules-img > img {
+  display: block;
+  margin-inline:auto;
+  margin-bottom: 130px;
+}
+
+.close-icon img {
+  display: block;
+  margin-inline: auto;
+  cursor: pointer;
+  padding:5px;
+} */

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <title>Rock-Paper-Scissors</title>
+  <link rel="stylesheet" href="assets/css/rock-paper-scissors.css">
+  <script src="assets/js/rock-paper-scissor.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="assets/img/rps-header.svg" alt="">
+      <div class="score-box">
+        <h3>SCORE</h3>
+        <p><span id="scoreTxt"></span></p>
+      </div>
+    </div>
+    
+    <div class="game-area">
+        <div class="game-images">
+          <div class="upside">
+            <div>
+              <img id="paper" class="gameBtn" src="assets/img/paper-mobil-image.svg" alt="">
+            </div>
+            <div>
+              <img id="scissors" class="gameBtn" src="assets/img/scissors-mobil-image.svg" alt="">
+            </div>
+          </div>
+            <div class="downside">
+              <img id="rock" class="gameBtn" src="assets/img/rock-mobil-image.svg" alt="">
+            </div>
+       </div>
+    </div>
+
+    <div id="showResult"class="show-result-area">
+
+      <div id="paperRock" class="result-sample">
+        <img id="paper" class="gameBtn" src="assets/img/paper-mobil-image.svg" alt="">
+        <img id="rock" class="gameBtn" src="assets/img/rock-mobil-image.svg" alt="">
+      </div>
+
+      <div id="paperScissors" class="result-sample">
+        <img id="paper" class="gameBtn" src="assets/img/paper-mobil-image.svg" alt="">
+        <img id="scissors" class="gameBtn" src="assets/img/scissors-mobil-image.svg" alt="">
+      </div>
+
+      <div id="paperPaper" class="result-sample">
+        <img id="paper" class="gameBtn" src="assets/img/paper-mobil-image.svg" alt="">
+        <img id="paper" class="gameBtn" src="assets/img/paper-mobil-image.svg" alt="">
+      </div>
+      
+      <div id="rockScissors" class="result-sample">
+        <img id="rock" class="gameBtn" src="assets/img/rock-mobil-image.svg" alt="">
+        <img id="scissors" class="gameBtn" src="assets/img/scissors-mobil-image.svg" alt="">
+      </div>
+
+      <div id="rockPaper" class="result-sample">
+        <img id="rock" class="gameBtn" src="assets/img/rock-mobil-image.svg" alt="">
+        <img id="paper" class="gameBtn" src="assets/img/paper-mobil-image.svg" alt="">
+      </div>
+
+      <div id="rockRock" class="result-sample">
+        <img id="rock" class="gameBtn" src="assets/img/rock-mobil-image.svg" alt="">
+        <img id="rock" class="gameBtn" src="assets/img/rock-mobil-image.svg" alt="">
+      </div>
+
+      <div id="scissorsPaper" class="result-sample">
+        <img id="scissors" class="gameBtn" src="assets/img/scissors-mobil-image.svg" alt="">
+        <img id="paper" class="gameBtn" src="assets/img/paper-mobil-image.svg">
+      </div>
+
+      <div id="scissorsRock" class="result-sample">
+        <img id="scissors" class="gameBtn" src="assets/img/scissors-mobil-image.svg" alt="">
+        <img id="rock" class="gameBtn" src="assets/img/rock-mobil-image.svg" alt="">
+      </div>
+
+      <div id="scissorsScissors" class="result-sample">
+        <img id="scissors" class="gameBtn" src="assets/img/scissors-mobil-image.svg" alt="">
+        <img id="scissors" class="gameBtn" src="assets/img/scissors-mobil-image.svg" alt="">
+      </div>
+
+
+      <div class="win-scenario">
+        <h3>YOU WIN</h3>
+        <a class="again" href="/">Play again</a>
+      </div>
+
+      <div class="lose-scenario">
+        <h3>YOU LOSE</h3>
+        <a class="again" href="/">Play again</a>
+      </div>
+
+      <div class="deuce-scenario">
+        <h3>TIE</h3>
+        <a class="again" href="/">Play again</a>
+      </div>
+    </div>
+
+    <button id="rulesBtn" class="rules">RULES</button>
+
+    <!-- <div id="rulesArea">
+      <h1>RULES</h1>
+      <img src="assets/img/rules.svg.url" alt="">
+      <div class="close-icon">
+          <img class="closeBtn" src="assets/img/close-icon.svg.url" alt="">
+      </div> -->
+  </div>
+</div>
+</body>
+</html>
